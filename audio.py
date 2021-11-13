@@ -5,7 +5,7 @@ from time import sleep
 
 engine = pyttsx3.init()
 
-file_path = input( "Введите путь к файлу:  ")
+file_path = input( "Enter the path to the file ...(Введите путь к файлу)  ")
 
 file = open( file_path, 'r')
 
@@ -22,4 +22,4 @@ for i in tqdm( range( 100 ) ):
 tts = gTTS ( text = theText, lang = 'ru' )
 tts.save( 'youfile.mp3' )
 
-print( 'File Saved...' )
+print( 'File Saved(Файл сохранен)...' )
